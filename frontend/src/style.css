@@ -41,6 +41,17 @@ header {
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 20px;
+  gap: 20px;
+}
+
+.github-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.github-link:hover {
+  color: var(--accent);
 }
 
 /* Search Section */

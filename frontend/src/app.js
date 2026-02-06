@@ -118,6 +118,7 @@ function render() {
                   onclick="window.selectYear(${y})">${y}</button>
         `).join('')}
       </div>
+      <a href="https://github.com/alexeygrigorev/chatgpt-data-viewer" target="_blank" class="github-link">GitHub</a>
     </header>
 
     <div class="stats">
