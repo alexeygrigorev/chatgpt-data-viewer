@@ -20,6 +20,7 @@ const state = {
   searchQuery: '',
   searchResults: [],
   isSearching: false,
+  tooltipLocked: false, // Prevent tooltip from showing after click
 };
 
 // DOM Elements
@@ -613,6 +614,9 @@ document.addEventListener('click', (e) => {
   if (cell) {
     const date = cell.dataset.date;
     if (date) {
+      // Lock tooltip temporarily to prevent it from showing after render
+      state.tooltipLocked = true;
+      setTimeout(() => { state.tooltipLocked = false; }, 100);
       loadConversations(date);
     }
   }
@@ -620,6 +624,7 @@ document.addEventListener('click', (e) => {
 
 // Tooltip handler
 document.addEventListener('mouseover', (e) => {
+  if (state.tooltipLocked) return;
   const cell = e.target.closest('.day-cell');
   const tooltip = document.getElementById('tooltip');
   if (!tooltip) return;
