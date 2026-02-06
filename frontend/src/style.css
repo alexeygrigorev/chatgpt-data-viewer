@@ -333,21 +333,18 @@ h1 {
   position: relative;
 }
 
-.download-btn {
+.save-link {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: var(--accent);
-  border: none;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 6px;
+  color: var(--text-muted);
+  font-size: 1.2rem;
   cursor: pointer;
-  font-size: 0.85rem;
+  text-decoration: none;
 }
 
-.download-btn:hover {
-  background: var(--accent-hover);
+.save-link:hover {
+  color: var(--accent);
 }
 
 .detail-title {

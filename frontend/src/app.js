@@ -434,9 +434,9 @@ function renderConversationDetail() {
           ${c.model ? `Model: ${c.model} • ` : ''}
           Created: ${formatDateTime(c.createTime)}
         </div>
-        <button class="download-btn" onclick="window.downloadConversation()">
-          <i class="fas fa-save"></i> Save as Markdown
-        </button>
+        <a class="save-link" onclick="window.downloadConversation()">
+          <i class="fas fa-save"></i>
+        </a>
       </div>
       <div class="messages">${messages}<div class="messages-spacer"></div></div>
     </div>
