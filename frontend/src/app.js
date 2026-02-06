@@ -118,7 +118,9 @@ function render() {
                   onclick="window.selectYear(${y})">${y}</button>
         `).join('')}
       </div>
-      <a href="https://github.com/alexeygrigorev/chatgpt-data-viewer" target="_blank" class="github-link">GitHub</a>
+      <a href="https://github.com/alexeygrigorev/chatgpt-data-viewer" target="_blank" class="github-link">
+        <i class="fab fa-github"></i>
+      </a>
     </header>
 
     <div class="stats">
@@ -433,7 +435,7 @@ function renderConversationDetail() {
           Created: ${formatDateTime(c.createTime)}
         </div>
         <button class="download-btn" onclick="window.downloadConversation()">
-          Download as Markdown
+          <i class="fas fa-save"></i> Save as Markdown
         </button>
       </div>
       <div class="messages">${messages}<div class="messages-spacer"></div></div>
