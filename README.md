@@ -2,6 +2,9 @@
 
 Browse your ChatGPT conversation history with a GitHub-style contribution graph and full-text search.
 
+<img width="1835" height="958" alt="image" src="https://github.com/user-attachments/assets/2130fb9e-d6bb-4864-8487-6ae4f4aafd30" />
+
+
 ## Features
 
 - GitHub-style activity graph - Visual overview of your conversation activity
